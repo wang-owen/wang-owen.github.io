@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@350;400;500&display=swap");
 
-html {
+* {
+  scroll-behavior: smooth;
+}
+
+body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   scroll-behavior: smooth;
@@ -20,7 +24,7 @@ html {
   backdrop-filter: blur(10px);
   height: 44px;
   line-height: 44px;
-  width: calc(100% - 16px);
+  width: 100%;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -59,7 +63,7 @@ html {
   height: auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   #nav-text,
   #nav-logo {
     display: none;
@@ -97,7 +101,6 @@ main {
 }
 
 #home img {
-  display: block;
   width: 100%;
 }
 
@@ -151,6 +154,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 2rem;
   height: auto;
   align-items: center;
   text-align: center;
@@ -202,5 +206,6 @@ main {
 
   #projects-gallery {
     flex-direction: row;
+    justify-content: flex-start;
   }
 }
